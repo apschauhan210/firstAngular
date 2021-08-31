@@ -1,0 +1,6 @@
+<h3>Section strengths</h3>
+
+<ul *ngFor = "let strengths of sectionStrength | async">
+    <li><span>{{strengths.section}}</span>:  <span> {{strengths.strength}}</span> </li>
+
+</ul>

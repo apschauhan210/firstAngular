@@ -1,0 +1,23 @@
+[
+    {
+        "section" : "A",
+        "strength" : 49
+    },
+    {
+        "section" : "B",
+        "strength" : 32
+    },
+    {
+        "section" : "C",
+        "strength" : 43
+    },
+    {
+        "section" : "D",
+        "strength" : 55
+    },
+    {
+        "section" : "E",
+        "strength" : 65
+    }
+    
+]

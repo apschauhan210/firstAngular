@@ -1,0 +1,10 @@
+<div *ngIf = "student">
+    <h2>{{student.studentName}}'s Details:</h2>
+    <ul>
+        <li><div><b>Id:</b> {{student.id}}</div></li>
+        <li><div><label for="studentName"><b>Name:</b> <input [(ngModel)] = "student.studentName" placeholder = "Name"/></label></div></li>
+    </ul>
+
+    <button (click) = "addToWeakStudents(student)">Add to weak students</button>
+
+</div>

@@ -1,0 +1,15 @@
+<h2>Student list:</h2>
+<ol class="students">
+
+    <li *ngFor = "let student of studentsList"
+    [class.selected] = "student === selectedStudent"
+    (click) = "onSelect(student)" class="badge">
+       <a [title] = "student.studentName"> <b>ID: </b> {{student.id}} <b> <br> Name: </b>{{student.studentName}} </a>  
+       <!-- <a [title] = "student.studentName"></a> : creates hovering effect -->
+    </li>
+
+</ol>
+
+<app-student-detail [student] = "selectedStudent"></app-student-detail>
+<app-alert-character [student] = "selectedStudent" (details) = "onDetails(selectedStudent)"></app-alert-character>
+
